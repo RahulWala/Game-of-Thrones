@@ -1,0 +1,1 @@
+webpackJsonp([61],{836:function(n,i,o){void(n.exports=Promise.all([o.e(562).then(o.bind(null,2713))]).then(function(){return function(){return window.Waypoint}.apply(void 0,arguments[0])}.bind(this)))}});
