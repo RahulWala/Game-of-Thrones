@@ -4,13 +4,13 @@ app.controller('characterController',['$http','$routeParams','gotservice',functi
 
 
 	//Function Calling
-	this.allchar = function() {
+	this.allchar = function(){
 		for(var i = 1; i<50; i++){
 
 		gotservice.getcharacterDetail(i)
 		.then(function successCallback(response){
 			main.charData.push.apply(main.charData, response.data);
-			console.log(response.data);
+			// console.log(response.data);
 
 
 		},function errorCallback(response){
@@ -18,7 +18,6 @@ app.controller('characterController',['$http','$routeParams','gotservice',functi
 		}
 		)
 	}}
-
 
     this.orderByField = 'name','culture';
 	this.reverseSort = false;

@@ -1,4 +1,4 @@
-app.controller('singleCharController',['$http','$routeParams','gotservice',function ($http,$routeParams,gotservice) {
+app.controller('singleCharController',['$http','$routeParams','gotservice',function($http,$routeParams,gotservice) {
 	
 	var main = this;
 	this.charId = $routeParams.id2;
@@ -7,6 +7,7 @@ app.controller('singleCharController',['$http','$routeParams','gotservice',funct
 	this.getchar = function(){
 		gotservice.getSingleCharacterDetail(main.charId)
 		.then(function successCallback(response){
+			console.log(response.data);
 			main.singlechar.push(response.data);
 		})
 	}

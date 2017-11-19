@@ -1,5 +1,5 @@
-<div class="container-fluid" ng-controller="singleHouseController as singleHs" ng-init="sinHou.sinHouse()">
-	<div class="row" ng-repeat="home in sinHou.singleHou">
+<div class="container-fluid" ng-controller="singleHouseController as singleHs" ng-init="singleHs.getHouse()">
+	<div class="row" ng-repeat="home in singleHs.singleHouse">
 		<div class="col-lg-12 col-md-12 col-sm-12">
 			<div class="card text-center mt-2">
 				<h3 class="card-header card-info">{{home.name}}</h3>
